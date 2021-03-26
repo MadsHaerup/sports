@@ -1,0 +1,17 @@
+$brandColor: #00adee;
+$headerBg: #f4f6f9;
+$bannerBg: #fafafa;
+$bg: #fff;
+$headingColor: #333;
+$textColor: #4f4f4f;
+
+@mixin button {
+	color: #fff;
+	background-color: #000;
+	border-radius: 7.33503px;
+}
+
+@mixin heading {
+	color: $headingColor;
+	font-weight: bold;
+}
