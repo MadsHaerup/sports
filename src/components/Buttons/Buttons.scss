@@ -1,0 +1,33 @@
+@import "src/variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+.btnContainer {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1em;
+	&__btn {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		grid-template-rows: 1fr 1fr;
+		@include button;
+		font-family: "Roboto", sans-serif;
+		&__img {
+			grid-area: 1/1/-1/2;
+			place-self: center;
+		}
+		&__download {
+			grid-area: 1/2/2/-1;
+			margin: 0;
+			font-weight: 400;
+		}
+		&__store {
+			grid-area: 2/2/-1/-1;
+			margin: 0;
+			font-weight: 500;
+			font-size: 1.3em;
+			span {
+				font-weight: 300;
+			}
+		}
+	}
+}

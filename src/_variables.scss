@@ -9,6 +9,10 @@ $textColor: #4f4f4f;
 	color: #fff;
 	background-color: #000;
 	border-radius: 7.33503px;
+	border: none;
+	outline: none;
+	padding: 0.5em 1em;
+	font-size: 0.6em;
 }
 
 @mixin heading {
