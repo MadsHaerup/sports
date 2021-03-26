@@ -1,0 +1,53 @@
+@import "src/variables.scss";
+
+.banner {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	background-color: $bannerBg;
+	&__heading {
+		text-align: center;
+		place-self: center;
+		@include heading;
+	}
+	&__brands {
+		display: grid;
+		place-self: center;
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+		width: 80%;
+		img {
+			max-width: 100%;
+			place-self: center;
+		}
+	}
+}
+
+@media screen and (max-width: 380px) {
+	.banner__brands {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		grid-template-areas:
+			"sport1 . sport2"
+			"icon1 icon2 icon3"
+			"sky sky sky";
+		img {
+			&:nth-child(1) {
+				grid-area: sport1;
+			}
+			&:nth-child(2) {
+				grid-area: sport2;
+			}
+			&:nth-child(3) {
+				grid-area: icon1;
+			}
+			&:nth-child(4) {
+				grid-area: icon2;
+			}
+			&:nth-child(5) {
+				grid-area: icon3;
+			}
+			&:nth-child(6) {
+				grid-area: sky;
+			}
+		}
+	}
+}
