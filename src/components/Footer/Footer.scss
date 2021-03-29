@@ -1,0 +1,17 @@
+@import "src/variables";
+
+.footer {
+	background-color: $brandColor;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+
+	&__links {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	&__soMe {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
