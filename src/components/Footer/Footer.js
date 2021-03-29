@@ -7,7 +7,7 @@ import { TiSocialInstagram } from "react-icons/ti";
 export default function Footer() {
 	return (
 		<footer className="footer">
-			<img src={logo} alt="logo" />
+			<img className="footer__logo" src={logo} alt="logo" />
 
 			<div className="footer__links">
 				<a href="/download">Download</a>
@@ -17,9 +17,15 @@ export default function Footer() {
 			</div>
 
 			<div className="footer__soMe">
-				<FaTwitter />
-				<FaFacebookF />
-				<TiSocialInstagram />
+				<a href="https://twitter.com/">
+					<FaTwitter />
+				</a>
+				<a href="https://facebook.com/">
+					<FaFacebookF />
+				</a>
+				<a href="https://instagram.com/">
+					<TiSocialInstagram />
+				</a>
 			</div>
 		</footer>
 	);

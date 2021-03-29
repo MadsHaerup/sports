@@ -3,15 +3,70 @@
 .footer {
 	background-color: $brandColor;
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: 1fr 2fr 1fr;
+	color: #fff;
+	padding: 2em 2em;
+
+	&__logo {
+		place-self: center;
+	}
 
 	&__links {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
+		display: flex;
+		align-self: center;
+		justify-content: space-evenly;
+		a {
+			color: #fff;
+			text-decoration: none;
+		}
 	}
 
 	&__soMe {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
+		align-items: center;
+		text-align: center;
+		width: 10%;
+		grid-gap: 1em;
+		place-self: center;
+
+		a:nth-child(1),
+		a:nth-child(2),
+		a:nth-child(3) {
+			background-color: #fff;
+			color: $brandColor;
+			border-radius: 50%;
+			font-size: 0.8em;
+			padding: 0.5em 0.5em;
+		}
+	}
+}
+
+@media screen and(max-width:700px) {
+	.footer {
+		grid-gap: 0.5em;
+		grid-template-columns: 1fr;
+		&__logo,
+		&__soMe {
+			place-self: start;
+		}
+		&__soMe {
+			margin-top: 1em;
+		}
+		&__links {
+			align-self: start;
+			justify-content: start;
+			a {
+				padding-right: 1em;
+			}
+		}
+	}
+}
+
+@media screen and(max-width: 400px) {
+	.footer {
+		&__links {
+			font-size: 0.7em;
+		}
 	}
 }
