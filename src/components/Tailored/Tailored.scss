@@ -1,0 +1,65 @@
+@import "src/variables.scss";
+
+.tailored {
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(24, 1fr);
+	grid-template-rows: repeat(24, 1fr);
+	background-color: $headerBg;
+
+	&__personalized {
+		display: grid;
+		grid-area: 4/5/-1/14;
+		grid-template-rows: 1fr 3fr;
+		z-index: 1;
+		width: 500px;
+
+		&__cta {
+			&__buttons {
+				width: 300px;
+			}
+		}
+	}
+	&__phonesBg {
+		z-index: 0;
+		grid-area: 1/9/-1/-1;
+		place-self: end;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.tailored__phonesBg {
+		display: none;
+	}
+	.tailored {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		text-align: center;
+		padding-bottom: 2rem;
+
+		&__personalized {
+			width: 100%;
+			place-items: center;
+			grid-area: 1/1/-1/-1;
+			&__cta {
+				display: grid;
+			}
+			&__cta__buttons {
+				justify-self: center;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.tailored__personalized__cta {
+		h1 br,
+		p br {
+			display: none;
+		}
+		p {
+			width: 82%;
+			justify-self: center;
+		}
+	}
+}
