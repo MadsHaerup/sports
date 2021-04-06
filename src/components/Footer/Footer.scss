@@ -4,17 +4,20 @@
 	background-color: $brandColor;
 	display: grid;
 	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-areas: "sport links soMe";
 	color: #fff;
 	padding: 2em 2em;
 
 	&__logo {
 		place-self: center;
+		grid-area: sport;
 	}
 
 	&__links {
 		display: flex;
 		align-self: center;
 		justify-content: space-evenly;
+		grid-area: links;
 		a {
 			color: #fff;
 			text-decoration: none;
@@ -23,6 +26,7 @@
 
 	&__soMe {
 		display: grid;
+		grid-area: soMe;
 		grid-template-columns: repeat(3, 1fr);
 		align-items: center;
 		text-align: center;
@@ -46,16 +50,20 @@
 	.footer {
 		grid-gap: 0.5em;
 		grid-template-columns: 1fr;
+		grid-template-areas:
+			"sport"
+			"soMe"
+			"links";
+
 		&__logo,
 		&__soMe {
 			place-self: start;
 		}
-		&__soMe {
-			margin-top: 1em;
-		}
+
 		&__links {
 			align-self: start;
 			justify-content: start;
+			margin-top: 1em;
 			a {
 				padding-right: 1em;
 			}
