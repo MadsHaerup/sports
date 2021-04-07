@@ -1,5 +1,6 @@
 import axios from 'axios';
 import tweets from './tweets.json';
+import { render} from '@testing-library/react'
 
 jest.mock('axios');
 
@@ -18,6 +19,8 @@ describe("fetches the tweets",()=>{
     axios.get.mockResolvedValue(resp);
 
     expect(resp.data).toEqual(users);
+
+    
   })
 // ────────────────────────────────────────────────────────────────────────────────
 
