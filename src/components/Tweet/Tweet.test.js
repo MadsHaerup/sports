@@ -3,7 +3,7 @@ import tweets from './tweets.json';
 
 jest.mock('axios');
 
-describe("correctly fetches the tweets",()=>{
+describe("fetches the tweets",()=>{
 
   it("correctly fetches the user names", ()=>{
     const users =  expect(tweets.map(tweet => tweet.name)).toEqual([
