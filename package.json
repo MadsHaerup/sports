@@ -50,6 +50,11 @@
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
   },
+  "husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
   "lint-staged": {
     "*.js": "eslint --cache --fix",
     "*.{js,css,md,jsx,html,scss}": "prettier --write"
