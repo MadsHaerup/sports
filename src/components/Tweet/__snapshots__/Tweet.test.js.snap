@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tweets correctly matches the name from the json file 1`] = `
+Array [
+  Object {
+    "id": "1",
+    "image": "public/person1.svg",
+    "name": "Noah Jackson",
+    "tweet": "I use this app every day and it's a great way to keep up to date with what's going on in football. It's a shame it won't rotate into landscape mode like its main competitor",
+  },
+  Object {
+    "id": "2",
+    "image": "public/person2.svg",
+    "name": "Darren Wilson",
+    "tweet": "Good for scores and commentary but the team lineups have stopped working. ",
+  },
+  Object {
+    "id": "3",
+    "image": "public/person3.svg",
+    "name": "Michael Akinuli",
+    "tweet": "Good for watching the goals and great for highlights instead of waiting till 10:30 before you can watch highlights on March of the day also no need of sky go",
+  },
+  Object {
+    "id": "4",
+    "image": "public/person4.svg",
+    "name": "Sarah Udoma",
+    "tweet": "This app has videos for other premier league teams who play and it also gives me nofications when my favourite team plays",
+  },
+  Object {
+    "id": "5",
+    "image": "public/person5.svg",
+    "name": "Zara Kanooh",
+    "tweet": "This app is brilliant!",
+  },
+]
+`;
+
+exports[`tweets shows the correct image 1`] = `
+Array [
+  Object {
+    "id": "1",
+    "image": "public/person1.svg",
+    "name": "Noah Jackson",
+    "tweet": "I use this app every day and it's a great way to keep up to date with what's going on in football. It's a shame it won't rotate into landscape mode like its main competitor",
+  },
+  Object {
+    "id": "2",
+    "image": "public/person2.svg",
+    "name": "Darren Wilson",
+    "tweet": "Good for scores and commentary but the team lineups have stopped working. ",
+  },
+  Object {
+    "id": "3",
+    "image": "public/person3.svg",
+    "name": "Michael Akinuli",
+    "tweet": "Good for watching the goals and great for highlights instead of waiting till 10:30 before you can watch highlights on March of the day also no need of sky go",
+  },
+  Object {
+    "id": "4",
+    "image": "public/person4.svg",
+    "name": "Sarah Udoma",
+    "tweet": "This app has videos for other premier league teams who play and it also gives me nofications when my favourite team plays",
+  },
+  Object {
+    "id": "5",
+    "image": "public/person5.svg",
+    "name": "Zara Kanooh",
+    "tweet": "This app is brilliant!",
+  },
+]
+`;
+
+exports[`tweets shows the correct tweet 1`] = `
+Array [
+  Object {
+    "id": "1",
+    "image": "public/person1.svg",
+    "name": "Noah Jackson",
+    "tweet": "I use this app every day and it's a great way to keep up to date with what's going on in football. It's a shame it won't rotate into landscape mode like its main competitor",
+  },
+  Object {
+    "id": "2",
+    "image": "public/person2.svg",
+    "name": "Darren Wilson",
+    "tweet": "Good for scores and commentary but the team lineups have stopped working. ",
+  },
+  Object {
+    "id": "3",
+    "image": "public/person3.svg",
+    "name": "Michael Akinuli",
+    "tweet": "Good for watching the goals and great for highlights instead of waiting till 10:30 before you can watch highlights on March of the day also no need of sky go",
+  },
+  Object {
+    "id": "4",
+    "image": "public/person4.svg",
+    "name": "Sarah Udoma",
+    "tweet": "This app has videos for other premier league teams who play and it also gives me nofications when my favourite team plays",
+  },
+  Object {
+    "id": "5",
+    "image": "public/person5.svg",
+    "name": "Zara Kanooh",
+    "tweet": "This app is brilliant!",
+  },
+]
+`;
