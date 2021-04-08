@@ -3,7 +3,7 @@ import Banner from "./components/Banner/Banner";
 import Experience from "./components/Experience/Experience";
 import Footer from "./components/Footer/Footer";
 import Tailored from "./components/Tailored/Tailored";
-import Tweet from "./components/Tweet/Tweet";
+import Slider from "./components/Tweet/Slider";
 
 function App() {
 	return (
@@ -11,7 +11,7 @@ function App() {
 			<Tailored />
 			<Experience />
 			<Banner />
-			<Tweet/>
+			<Slider/>
 			<Footer />
 		</>
 	);
