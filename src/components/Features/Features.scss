@@ -1,0 +1,49 @@
+@import 'src/variables.scss';
+
+.features{
+  background-color: $brandColor;
+  opacity: 1;
+  background-image: url(./bgthing.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding:0 2rem;
+  padding-bottom: 4rem;
+  &__container{
+    display: grid;
+    grid-gap:3rem 0;
+    max-width: 1440px;
+    margin:0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    justify-items: center;
+
+    &__item{
+      width:80%;
+    }
+  }
+  &__heading{
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    margin:0;
+    padding-top:2rem;
+    margin-bottom:3rem;
+  }
+}
+
+@media screen and(max-width:905px) {
+  .features{
+    background-size: cover;
+  }
+}
+@media screen and(max-width:465px) {
+  .features{
+    background-color: $bannerBg;
+
+  &__container{
+    grid-template-columns: 1fr;
+  }
+  &__heading{
+    color:$headingColor;
+  }
+  }
+}
