@@ -4,6 +4,7 @@
 	display: grid;
 	grid-template-rows: 1fr 1fr;
 	background-color: $bannerBg;
+	padding:4rem 2rem;
 	&__heading {
 		text-align: center;
 		place-self: center;

@@ -38,6 +38,7 @@
 @media screen and(max-width:465px) {
   .features{
     background-color: $bannerBg;
+    background-image: none;
 
   &__container{
     grid-template-columns: 1fr;
