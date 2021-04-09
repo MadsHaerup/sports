@@ -1,0 +1,18 @@
+@import 'src/variables.scss';
+
+.featureItem{
+  color:#fff;
+  &__icon{
+    font-size:2rem;
+  }
+}
+
+@media screen and (max-width:465px) {
+  .featureItem{
+    color:$headingColor;
+
+    &__icon{
+      color: $brandColor;
+    }
+  }
+}
