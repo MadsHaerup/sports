@@ -10,8 +10,8 @@ function App() {
 		<>
 			<Tailored />
 			<Experience />
-			<Banner />
 			<Slider/>
+			<Banner />
 			<Footer />
 		</>
 	);

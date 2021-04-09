@@ -1,0 +1,19 @@
+@import 'src/variables.scss';
+
+.sliderContainer{
+  margin-top:3rem;
+  margin-bottom: 4rem;
+  &__Heading{
+    text-align: center;
+  }
+  span[type=prev], span[type=next]{
+   border: 1px solid $brandColor; 
+  }
+  span[type=prev]::before, span[type=next]::before{
+    border-top: 2px solid $brandColor;
+    border-right: 2px solid $brandColor;
+  }
+  .igemKj{
+    bottom:-36px
+  }
+}
