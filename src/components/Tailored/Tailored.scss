@@ -67,13 +67,29 @@
 			}
 			&__cta__buttons {
 				justify-self: center;
+				margin: 1em 0 1em 0;
 			}
 		}
 	}
 }
 
+@media screen and(max-width:475px) {
+	.tailored__personalized__cta {
+		h1 {
+			width: 80%;
+			margin:0 auto;
+			margin-top: 1em;
+			margin-bottom: 1em;
+		}
+}
+}
+
 @media screen and (max-width: 375px) {
 	.tailored__personalized__cta {
+		h1 {
+			width: 100%;
+			margin: 1em 0 1em 0;
+		}
 		p {
 			width: 82%;
 			justify-self: center;
