@@ -1,4 +1,4 @@
-Live Preview [website](https://app.netlify.com/sites/elegant-nightingale-b0dfbe/overview)
+Live Preview [website](https://elegant-nightingale-b0dfbe.netlify.app/)
 
 # Mobile App Landing Page
 
