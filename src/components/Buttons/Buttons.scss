@@ -32,3 +32,17 @@
 		}
 	}
 }
+
+@media  screen and(max-width: 400px) {
+	.btnContainer {
+		&__btn {
+			&__download
+			{
+				font-size: 0.9em;
+			}
+			&__store{
+				align-self: start;
+			}
+		}
+	}
+}
