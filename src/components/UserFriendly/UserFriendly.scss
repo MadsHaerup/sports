@@ -1,0 +1,52 @@
+@import 'src/variables.scss';
+
+.score{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap:1rem;
+
+&__content{
+  display: grid;
+  align-content: center;
+  margin-left:10rem;
+  &__smallheading, &__link{
+    color: $brandColor;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  &__link{
+    padding-top: 3rem;
+  }
+}
+
+&__bg{
+  display: grid;
+  place-items: center;
+  &__img{
+    max-width:100%;
+  }
+}
+}
+
+@media screen and(max-width: 1100px) {
+  .score{
+    &__content{
+      margin-left:5rem;
+      &__link{
+        padding-top: 1rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+@media screen and(max-width: 750px) {
+.score{
+  grid-template-columns: 1fr;
+  &__content{
+    text-align: center;
+    display: grid;
+    align-content: center;
+    margin-left:0;
+  }
+}
+}
