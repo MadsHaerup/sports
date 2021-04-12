@@ -24,6 +24,17 @@
 	}
 }
 
+@media screen and(max-width:950px) {
+	.enhanced {
+		&__content {
+			width: 90%;
+		}
+		&__link {
+			margin-bottom: 2rem;
+		}
+	}
+}
+
 @media screen and(max-width:700px) {
 	.enhanced {
 		place-items: center;

@@ -34,3 +34,29 @@
 		}
 	}
 }
+
+@media screen and(max-width:820px) {
+	.match{
+
+		img{
+			&:nth-child(3) {
+				grid-area: 5/4/16/17;
+			}
+			&:nth-child(4) {
+				grid-area: 11/9/-1/22;
+			}
+		}
+	}
+}
+@media screen and(max-width:700px) {
+	.match{
+		img{
+			&:nth-child(3) {
+				grid-area: 5/4/14/17;
+			}
+			&:nth-child(4) {
+				grid-area: 13/9/-1/22;
+			}
+		}
+	}
+}
